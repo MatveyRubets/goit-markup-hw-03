@@ -53,14 +53,12 @@ a {
   color: inherit;
 }
 
-.visually-hidden {
+.visualy-hidden {
   position: absolute;
-  width: 1px;
-  height: 0;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .container {
@@ -306,9 +304,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 
 }
-.team__list-item:last-child{
-  margin: 0;
-}
+
 
 .team__list-name {
   font-family: Roboto;

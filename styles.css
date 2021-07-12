@@ -13,7 +13,6 @@ ol {
   padding: 0;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -30,6 +29,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+body{
+  margin: 0;
+  font-family: Roboto;
 }
 
 ul[class] {
@@ -84,7 +87,7 @@ a {
 
   letter-spacing: 0.03em;
   color: #2196F3;
-
+  margin-right: 93px;
 }
 
 .title-color {
@@ -98,7 +101,7 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
-  margin-right: 93px;
+  
 }
 
 .title-footer {
@@ -162,26 +165,21 @@ ul {
   transition: color 0.2s linear;
 }
 
-.mail {
-  margin-right: 50px;
-}
 
-.tel {
-  margin-right: 215px;
-}
 
 .mail:hover,
 .tel:hover {
   color: #2196F3;
 
 }
+.header-contacts li:not(:last-child) {
+  margin-right: 50px;
+}
 
 .intro {
   background: #2F303A;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+  padding: 200px 0 30px;
 }
 
 .intro__title {
@@ -194,13 +192,12 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 200px 0 30px;
+  margin: 0 auto 30px;
   color: #FFFFFF;
   max-width: 696px;
 }
 
 .intro__button {
-  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -213,9 +210,13 @@ ul {
   color: #FFFFFF;
   padding: 10px 32px;
   margin: 0 auto 200px;
+  outline: none;
+  border: none;
 }
-
 .benefits {
+  padding-top: 94px;
+}
+.benefits__list {
   display: flex;
   justify-content: space-between;
 }
@@ -228,11 +229,9 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 270px;
-  height: 16px;
   color: #212121;
   margin-bottom: 10px;
-  margin-top: 94px;  
+   
 }
 
 .benefits__description {
@@ -276,7 +275,8 @@ ul {
 }
 .team__block {
   background: #F5F4FA;
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team {
@@ -304,6 +304,10 @@ ul {
   border-radius: 0px 0px 4px 4px;
 
 }
+.team__list-div {
+  padding: 30px 0;
+}
+
 
 
 .team__list-name {
@@ -313,7 +317,7 @@ ul {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-  padding: 30px 0 10px;
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -330,7 +334,6 @@ ul {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
   color: #757575;
 }
 
@@ -338,14 +341,12 @@ ul {
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
 .footer-pf {
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  margin-top: 64px; 
+  margin-top: 94px; 
 }
 .footer-contacts li{
   margin-top: 9px;
@@ -363,6 +364,9 @@ margin-top: 20px;;
 
   color: #FFFFFF;
 }
+.main-pf {
+  padding-top: 94px;
+}
 
 .products {
   display: flex;
@@ -375,10 +379,8 @@ margin-top: 20px;;
 .products__list {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  box-sizing: border-box;
-  margin: 0px 30px 30px 0px;
+  margin: 30px 30px 0px 0px;
 }
-
 
 .products__name {
   font-family: Roboto;
@@ -418,18 +420,17 @@ margin-top: 20px;;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 162% */
   padding: 6px 22px;
-  margin: 94px 8px 50px 0px;
+  margin-right: 8px;
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
   color: #212121;
   background: #F5F4FA;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
+
 
 .button:hover{
   color: #FFFFFF;

@@ -14,32 +14,37 @@
 
 <body>
   <header class="header">
-    <a href="" class="title">Web<span class="title-color">Studio</span></a>
-    <nav>
-      <ul class="header-list">
-        <li>
-          <a class="links" href="./index.html">Студия</a>
-        </li>
-        <li>
-          <a class="links-highlighted" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li>
-          <a class="links" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="header-contacts">
-      <li>
-        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li>
-        <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="header-flex">
+        <a href="" class="title">Web<span class="title-color">Studio</span></a>
+        <nav>
+          <ul class="header-list">
+            <li>
+              <a class="links" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="links-highlighted" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a class="links" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li>
+            <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <main>
     <section class="main-pf">
       <div class="container">
+        <h2 class="visualy-hidden">особенности</h2>
         <nav>
           <ul class="buttons">
             <li><button type="button" class="button button-main">Все</button></li>
@@ -49,54 +54,73 @@
             <li><button type="button" class="button">Маркетинг</button></li>
           </ul>
         </nav>
+        <h2 class="visualy-hidden">особенности</h2>
+        <ul class="products">
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-laptop.jpg" alt="laptop-website">
+            <div class="products-items">
+              <h3 class="products__name">Технокряк</h3>
+              <p class="products__function">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-basketball.jpg" alt="basketball-game">
+            <div class="products-items">
+              <h3 class="products__name">Постер New Orlean vs Golden Star</h3>
+              <p class="products__function">Дизайн</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-seafood.jpg" alt="restaurant-seafood">
+            <div class="products-items">
+              <h3 class="products__name">Ресторан Seafood</h3>
+              <p class="products__function">Приложение</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-headphones.jpg" alt="headphones">
+            <div class="products-items">
+              <h3 class="products__name">Проект Prime</h3>
+              <p class="products__function">Маркетинг</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-boxes.jpg" alt="boxes">
+            <div class="products-items">
+              <h3 class="products__name">Проект Boxes</h3>
+              <p class="products__function">Приложение</p>
+
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-monitor.jpg" alt="monitor-website">
+            <div class="products-items">
+              <h3 class="products__name">Inspiration has no Borders</h3>
+              <p class="products__function">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-book.jpg" alt="book-design">
+            <div class="products-items">
+              <h3 class="products__name">Издание Limited Edition</h3>
+              <p class="products__function">Дизайн</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-tag.jpg" alt="tag-marketing">
+            <div class="products-items">
+              <h3 class="products__name">Проект LAB</h3>
+              <p class="products__function">Маркетинг</p>
+            </div>
+          </li>
+          <li class="products__list">
+            <img width="370" src="./images-portfolio/img-laptop-work.jpg" alt="laptop-work-growing-business">
+            <div class="products-items">
+              <h3 class="products__name">Growing Business</h3>
+              <p class="products__function">Приложение</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="products">
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-laptop.jpg" alt="laptop-website">
-          <h3 class="products__name">Технокряк</h3>
-          <p class="products__function">Веб-сайт</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-basketball.jpg" alt="basketball-game">
-          <h3 class="products__name">Постер New Orlean vs Golden Star</h3>
-          <p class="products__function">Дизайн</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-seafood.jpg" alt="restaurant-seafood">
-          <h3 class="products__name">Ресторан Seafood</h3>
-          <p class="products__function">Приложение</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-headphones.jpg" alt="headphones">
-          <h3 class="products__name">Проект Prime</h3>
-          <p class="products__function">Маркетинг</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-boxes.jpg" alt="boxes">
-          <h3 class="products__name">Проект Boxes</h3>
-          <p class="products__function">Приложение</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-monitor.jpg" alt="monitor-website">
-          <h3 class="products__name">Inspiration has no Borders</h3>
-          <p class="products__function">Веб-сайт</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-book.jpg" alt="book-design">
-          <h3 class="products__name">Издание Limited Edition</h3>
-          <p class="products__function">Дизайн</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-tag.jpg" alt="tag-marketing">
-          <h3 class="products__name">Проект LAB</h3>
-          <p class="products__function">Маркетинг</p>
-        </li>
-        <li class="products__list">
-          <img width="370" src="./images-portfolio/img-laptop-work.jpg" alt="laptop-work-growing-business">
-          <h3 class="products__name">Growing Business</h3>
-          <p class="products__function">Приложение</p>
-        </li>
-      </ul>
     </section>
   </main>
   <footer class="footer-pf">

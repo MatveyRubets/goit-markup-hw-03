@@ -233,7 +233,6 @@ ul {
 }
 
 .intro__title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -250,7 +249,6 @@ ul {
 }
 
 .intro__button {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -537,6 +535,7 @@ ul {
   margin-left: 28px;
   border: 1px solid #eeeeee;
 }
+
 .products__list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: ease-in-out 150ms;
@@ -570,7 +569,6 @@ ul {
 .button {
 
   display: inline-block;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -583,7 +581,7 @@ ul {
   color: #212121;
   background: #F5F4FA;
   border-radius: 4px;
-  
+
 }
 
 
@@ -608,4 +606,48 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal_container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  padding: 15px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+#close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
 }

@@ -1,0 +1,42 @@
+.clients-block {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-icons);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+}
+
+.list-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-img {
+  fill: var(--color-icons);
+  border: 2px solid transparent
+}
+
+.clients-link:hover {
+  fill: var(--color-link);
+  border: 2px solid #2196F3;
+  transition: var(--cubic) 250ms;
+}
+
+.client-img:hover,
+.clients-link:hover {
+  fill: var(--color-link);
+  transition: var(--cubic) 250ms;
+}
